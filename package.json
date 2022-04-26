@@ -1,0 +1,20 @@
+{
+  "name": "tailwind-3-responsive-sidebar-vuejs",
+  "version": "1.0.0",
+  "description": "Tailwind CSS 3 responsive sidebar with VueJS 3.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind -i ./assets/css/input.css -o ./assets/css/main.css",
+    "watch": "tailwind -i ./assets/css/input.css -o ./assets/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlabce.local/TailwindCSS/tailwind-3-responsive-sidebar-with-vuejs-3.git"
+  },
+  "keywords": ["tailwind", "vuejs", "responsive", "sidebar"],
+  "author": "Clemente Nogueira @HermesZum",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

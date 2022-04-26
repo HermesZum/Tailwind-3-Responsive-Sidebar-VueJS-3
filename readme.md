@@ -2,7 +2,7 @@
 
 Tailwind CSS 3 responsive sidebar with VueJS 3.
 
-![Alt text](/assets/img/screen.png?raw=true)
+![Alt text](/assets/img/screen.gif?raw=true)
 
 # Usage
 

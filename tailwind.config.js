@@ -1,7 +1,5 @@
 module.exports = {
-  experimental: {
-    optimizeUniversalDefaults: true
-  },
+  mode: 'jit',
   content: [
     './*.{html,htm,php,rb,py,js}',
     './**/*.{html,htm,php,rb,py,js}',
@@ -15,30 +13,15 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
     extend: {
       colors:{
-        blue: 'hsl(210, 100%, 50%)',
-        green: 'hsl(120, 100%, 50%)',
-        red: 'hsl(0, 100%, 50%)',
-        yellow: 'hsl(60, 100%, 50%)',
-        purple: 'hsl(300, 100%, 50%)',
-        orange: 'hsl(30, 100%, 50%)',
-        teal: 'hsl(180, 100%, 50%)',
-        gray: 'hsl(0, 0%, 50%)',
-        navy: 'hsl(240, 100%, 50%)',
-        amber: 'hsl(30, 100%, 50%)',
-        indigo: 'hsl(240, 100%, 50%)',
-        cyan: 'hsl(180, 100%, 50%)',
-        pink: 'hsl(330, 100%, 50%)',
-        lime: 'hsl(120, 100%, 50%)',
-        brown: 'hsl(30, 100%, 50%)',
-        bluegray: 'hsl(210, 100%, 50%)',
-        black: 'hsl(0, 0%, 0%)',
-        white: 'hsl(0, 0%, 100%)',
+        gray: {
+          '400': 'hsl(210,1%,59.2%)',
+          '500': 'hsl(0,0%,40%)',
+          '700': 'hsl(0,0%,20.8%)',
+          '800': 'hsl(0,0%,14.9%)',
+          '900': 'hsl(180,2.1%,9.2%)',
+        },
       },
     },
   },

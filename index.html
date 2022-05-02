@@ -1,124 +1,210 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-</head>
-<body>
-    <div class="w-64 h-screen bg-gray-900 rounded-md">
-        <div class="px-6 pt-8">
-            <div class="flex items-center justify-between">
-                <a href="#" class="bg-blue-600 p-1.5 rounded flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-white" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </a>
-                <button class="flex items-center justify-center p-0.5 rounded bg-gray-800">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-white" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="/assets/css/main.css">
+    </head>
+    <body>
+        <div class="w-64 h-screen bg-gray-900 rounded-r-md overflow-y-scroll">
+            <div class="px-6 pt-8">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="bg-blue-600 p-1.5 rounded flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-blue-500 focus:ring-offset-2 focus:ring-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-white" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </a>
+                    <button class="flex items-center justify-center p-0.5 rounded bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-white" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!--- Search -->
+            <div class="px-6 pt-4">
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-current text-gray-500" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <label>
+                        <input class="w-full rounded pl-8 pr-4 py-2.5 text-sm font-light bg-gray-800 text-gray-400 placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg.gray-800"
+                               type="text" placeholder="search">
+                    </label>
+                </div>
+            </div>
+            <!--- End Search -->
+            <!--- Divider -->
+            <div class="px-4 pt-4">
+                <hr class="border-gray-700">
+            </div>
+            <!--- End Divider -->
+            <!--- Links -->
+            <div class="px-6 pt-4">
+                <ul class="flex flex-col space-y-2">
+                    <!--- Link 1 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Dashboard
+                        </a>
+                    </li>
+                    <!--- End Link 1 -->
+                    <!--- Link 2 -->
+                    <li class="">
+                        <div class="relative text-gray-500 hover:text-white flex justify-between">
+                            <div class="flex items-center w-full">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                                    </svg>
+                                </div>
+                                <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                                    Content
+                                </a>
+                            </div>
+                            <button class="absolute right-0 p-1 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="pt-2 pl-4"> <!--- Use hidden here -->
+                            <ul class="flex flex-col space-y-2 pl-2 text-gray-500 border-l border-gray-700">
+                                <li>
+                                    <a href="#" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">Categories</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">Instructors</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">Video Library</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--- End Link 2 -->
+                    <!--- Link 3 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Design
+                        </a>
+                    </li>
+                    <!--- End Link 3 -->
+                    <!--- Link 4 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Market & Sell
+                        </a>
+                    </li>
+                    <!--- End Link 4 -->
+                    <!--- Link 5 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Reporting
+                        </a>
+                    </li>
+                    <!--- End Link 5 -->
+                    <!--- Link 6 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Support
+                        </a>
+                    </li>
+                </ul>
+                <!--- End Link 6 -->
+            </div>
+            <div class="px-6 pt-8">
+                <hr class="border-gray-700 ">
+            </div>
+            <div class="px-6 pt-4 pb-8">
+                <ul class="flex flex-col space-y-2">
+                    <!--- Link 1 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Settings
+                        </a>
+                    </li>
+                    <!--- End Link 1 -->
+                    <!--- Link 1 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Notifications
+                        </a>
+                    </li>
+                    <!--- End Link 1 -->
+                    <!--- Link 1 -->
+                    <li class="relative text-gray-500 hover:text-white">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                            </svg>
+                        </div>
+                        <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:bg-gray-800">
+                            Apps
+                        </a>
+                    </li>
+                    <!--- End Link 1 -->
+                </ul>
+            </div>
+            <div class="pl-6 pr-4 py-4 bg-grayish flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="relative w-12 h-12 rounded-full before:absolute before:w-3 before:h-3 before:bg-green-500 before:rounded-full before:right-0 before:bottom-0 before:ring-1 before:ring-white">
+                    <img class="rounded-full" src="./assets/img/avatar.jpg" alt="avatar">
+                    </div>
+                    <div class="flex flex-col pl-3">
+                        <div class="text-md text-gray-50">Rick Rich</div>
+                        <span class="text-sm text-[#acacb0] font-light tracking-tight">rick@example.com</span>
+                    </div>
+                </div>
+                <button class="text-gray-400 bg-gray-700 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                 </button>
             </div>
         </div>
-        <!--- Search -->
-        <div class="px-6 pt-4">
-            <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 stroke-current text-gray-500" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </div>
-                <label>
-                    <input class="w-full rounded pl-8 pr-4 py-2.5 text-sm font-light bg-gray-800 text-gray-400 placeholder-gray-500"
-                           type="text" placeholder="search">
-                </label>
-            </div>
-        </div>
-        <!--- End Search -->
-        <!--- Divider -->
-        <div class="px-4 pt-4">
-            <hr class="border-gray-700">
-        </div>
-        <!--- End Divider -->
-        <!--- Links -->
-        <div class="px-6 pt-4">
-            <!--- Link 1 -->
-            <ul class="flex flex-col space-y-2">
-                <li class="relative text-gray-500 hover:text-white">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                        </svg>
-                    </div>
-                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800">Dashboard</a>
-                </li>
-            </ul>
-            <!--- End Link 1 -->
-            <!--- Link 2 -->
-            <ul class="flex flex-col space-y-2">
-                <li class="relative text-gray-500 hover:text-white">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                        </svg>
-                    </div>
-                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800">Content</a>
-                </li>
-            </ul>
-            <!--- End Link 2 -->
-            <!--- Link 3 -->
-            <ul class="flex flex-col space-y-2">
-                <li class="relative text-gray-500 hover:text-white">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                        </svg>
-                    </div>
-                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800">Design</a>
-                </li>
-            </ul>
-            <!--- End Link 3 -->
-            <!--- Link 4 -->
-            <ul class="flex flex-col space-y-2">
-                <li class="relative text-gray-500 hover:text-white">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div>
-                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800">Market & Sell</a>
-                </li>
-            </ul>
-            <!--- End Link 4 -->
-            <!--- Link 5 -->
-            <ul class="flex flex-col space-y-2">
-                <li class="relative text-gray-500 hover:text-white">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                    </div>
-                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800">Reporting</a>
-                </li>
-            </ul>
-            <!--- End Link 5 -->
-            <!--- Link 6 -->
-            <ul class="flex flex-col space-y-2">
-                <li class="relative text-gray-500 hover:text-white">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                        </svg>
-                    </div>
-                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 rounded text-sm hover:bg-gray-800">Support</a>
-                </li>
-            </ul>
-            <!--- End Link 6 -->
-        </div>
-    </div>
-</body>
+    </body>
 </html>
